@@ -1,0 +1,89 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 175%;
+	margin: 20px 0px 20px 0px;
+}
+
+.section_content {
+	background-color: #CCC4C4;
+	border: 1px solid #000000;
+	margin-left: 20px;
+	margin-top: 20px;
+/*	position: relative; */
+	overflow: hidden;
+	height: auto;
+	margin-right: 0px;
+}
+
+.region_title {
+	border: 1px solid #000000;
+	width: 150px;
+	text-align: center;
+	font-size: 125%;
+	/*position: absolute;
+	top: 0px;
+	right: 0px;*/  /*if we use this method to move Region_title to top-right corner we have to put .section_content element to position: relative;*/
+	float: right;
+	font-weight: bold;
+	padding: 5px 5px 5px 5px;
+}
+
+#region_title1 {
+	background-color: #00F2FF;
+}
+
+#region_title2 {
+	background-color: #FF0011;
+	color: #FCFCFC;
+}
+
+#region_title3 {
+	background-color: #F3F7A6;
+}
+
+.div_text {
+	clear: right;
+	padding: 10px 10px 10px 10px;
+}
+
+.row {
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33%;
+	}
+	#section3 {
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6, .col-md-12{
+		float: left;
+	}
+	.col-md-6 {
+		width: 50%;
+	}
+	.col-md-12 {
+		width: 100%;
+	}
+	#section3, #section2 {
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	#section1, #section2, #section3 {
+		margin-right: 20px;
+	}
+}
